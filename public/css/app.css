@@ -1,1 +1,11 @@
+.app {
+    background-color: aqua;
+}
 
+body {
+    color: brown;
+}
+
+.container {
+    margin: 100px;
+}

@@ -1,0 +1,18 @@
+
+<template>
+<p>ouiiiiii zin </p>
+
+
+</template>
+
+
+<script>
+
+console.log("toufik")
+</script>
+<style scoped>
+.first {
+  background-color: aqua;
+}
+
+</style>

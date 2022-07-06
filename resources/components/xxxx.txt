@@ -1,0 +1,9 @@
+<ButtonTemplate />
+
+import ButtonTemplate from './ButtonTemplate.vue'
+export default {
+  name:'PostIndex' ,
+  components:{
+    ButtonTemplate
+  }
+}

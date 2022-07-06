@@ -18,16 +18,25 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
         </style>
+       
          <link href="{{ asset('css/app.css') }}" rel="stylesheet">
             </head>
+            
     <body class="antialiased">
-        <div id="app"> 
-            <h1>salut evry body</h1>
-            <p>hey you are you okey </p>
-            <router-view />
-        </div>
-        <script src="{{ asset('js/app.js') }}"></script>
+<div class="container">
 
+
+
+        <div id="app"> 
+           <h1>hey</h1>
+           
+           <router-view />
+           
+        </div>
+        
+    </div>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

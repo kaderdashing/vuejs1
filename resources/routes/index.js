@@ -6,7 +6,7 @@ const routes = [{
     name: 'welcome',
     component: PostIndex
 }];
-
+console.log("2")
 export default createRouter({
     history: createWebHistory(),
     routes

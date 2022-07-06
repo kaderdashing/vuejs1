@@ -1,5 +1,6 @@
 require('./bootstrap');
-console.log("fethi")
+console.log("3")
+
 
 import { createApp } from "vue";
 import router from "../routes/index";
