@@ -1,6 +1,6 @@
 
 <template>
-<button class="button-1" role="button" :style="{color}">
+<button class="button-1" role="button" :style="{color,borderRadius,background,disabled,border,borderColor,mouseoverColor,mouseoverBackground,borderRadius}">
     <slot/> 
 </button>
 
@@ -12,20 +12,22 @@ import { data } from 'browserslist';
 
 export default {
             props : {
-                    color:{  type: String , default:"red" },
+                    color:{  type: String , default:"orange" },
                     background:{ type: String  },
                     disabled:{  type: Boolean  },
                     border:{    type:[ Number,String ] },
                     borderColor:{    type: String  },
                     mouseoverColor:{type: String} ,
-                    mouseoverBackground:{type: String ,default: "#ddd"} ,
+                    mouseoverBackground:{type: String ,default: "red"} ,
                     padding:{type:[String,Number]},
-                    borderRadius:{type:[String,Number]},
+                    borderRadius:{type:String,default:"0px"},
                     margin:{type:[String,Number]},
-                    corner:{type:[String,Number]},
+                    corner:{type:[String,Number],default:"8"},
+
             },
 
-    data()  {   return {isMaousOver:false  }  ;} ,
+
+    data()  {   return {  hover: false,  }  ;} ,
 
     computed : {
 
@@ -59,9 +61,8 @@ export default {
             } ,
 
            _corner() {
-                if(this.isNumeric(this.borderRadius)) {
-                    return this.borderRadius + "px" ;}
-                    return this.borderRadius ;
+             
+                    return this.borderRadius + "px" ;
             },
             _padding() {
                 if(this.isNumeric(this.padding)) {
