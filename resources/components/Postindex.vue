@@ -1,4 +1,6 @@
 <template> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <div class="container">
     <div class="total-btn">
       <div class="first">
@@ -21,8 +23,10 @@
     </div>
   </div>
   <div class="container">
+     <inputTemplate ></inputTemplate>
     <inputTemplate type="disableddd" />
-        <inputTemplate ></inputTemplate>
+    <inputTemplate type="error" />
+         <inputTemplate explain="cleck me" />
 
     
 
@@ -56,6 +60,9 @@ console.log("1")
   margin-top: 30px;
   justify-content: space-around;
 }
-
+#passwordHelpBlock {
+  font-size: x-small;
+  display: block;
+}
 
 </style>
